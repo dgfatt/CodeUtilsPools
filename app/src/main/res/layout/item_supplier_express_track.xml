@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--换成你的View的位置-->
+    <com.ld.pool.common.view.StepProgressLayout
+        android:id="@+id/step_view"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/v_item_bottom_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:step_first_image="@drawable/ic_supplier_express_first"
+        app:step_normal_image="@drawable/ic_supplier_express_normal"
+        app:step_style="normal" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="24dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="[深圳市] 快件已签收，感谢您！，期[深圳市] 快件已签收快件已签收快件已签收快件已签收快件已签收"
+        android:textColor="@color/color_gray_99"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@id/step_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/step_view" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="24dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="2016-07-12  12 : 30"
+        android:textColor="@color/color_gray_99"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintLeft_toRightOf="@id/step_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <View
+        android:id="@+id/v_item_bottom_line"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginTop="14dp"
+        android:background="@color/color_gray_dc"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintLeft_toRightOf="@id/step_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_time" />
+</androidx.constraintlayout.widget.ConstraintLayout>

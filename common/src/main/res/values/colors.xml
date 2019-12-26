@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0076fe</color>
+    <color name="colorPrimaryDark">#1874CD</color>
+    <color name="colorAccent">#1C86EE</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_gray_33">#333333</color>
+    <color name="color_gray_66">#666666</color>
+    <color name="color_gray_99">#999999</color>
+    <color name="color_gray_dc">#dcdcdc</color>
+    <color name="color_gray_ee">#eeeeee</color>
+    <color name="color_gray_f7">#f7f7f7</color>
+    <color name="color_gray_cc">#cccccc</color>
+
+    <color name="color_transparent">@android:color/transparent</color>
+    <color name="color_transparent_3f">#33ffffff</color>
+
+    <color name="main_color">#5CB85C</color>
+    <!-- 待受理 -->
+    <color name="order_state_waiting_reception">#ffb600</color>
+    <!-- 已派发 -->
+    <color name="order_state_distributed">#dbdb00</color>
+    <!-- 进行中 -->
+    <color name="order_state_progressing">#33d142</color>
+    <!-- 审核中 -->
+    <color name="order_state_auditing">#32dfef</color>
+    <!-- 已完成 -->
+    <color name="order_state_finished">#32dfef</color>
+    <!-- 未开始 -->
+    <color name="order_state_not_started">#ffb600</color>
+
+</resources>

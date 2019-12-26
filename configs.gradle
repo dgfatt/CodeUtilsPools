@@ -1,0 +1,118 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.multidex = '2.0.1'
+versions.appcompat = '1.1.0'
+versions.design = '1.2.0-alpha03'
+versions.supportV4 = '1.0.0'
+versions.recyclerview = '1.1.0'
+versions.percentlayout = '1.0.0'
+versions.cardview = '1.0.0'
+versions.constraintlayout = '1.1.3'
+versions.coordinatorlayout = '1.1.0'
+versions.viewpager = '1.0.0'
+versions.swiperefreshlayout = '1.0.0'
+versions.fragment = '1.1.0'
+versions.core = '1.1.0'
+versions.annotation = '1.1.0'
+versions.media2 = '1.0.0-alpha04'
+versions.gridlayout = '1.0.0'
+versions.drawerlayout = '1.0.0'
+versions.lifecycleVersion = '2.1.0'
+versions.kotlinVersion = '1.3.61'
+versions.navigationVersion = '2.1.0'
+versions.junit = '4.12'
+versions.testRunner = '1.2.0'
+versions.testEspressoCore = '3.2.0'
+versions.BaseRecyclerViewAdapterHelper = '2.9.50'
+versions.vectordrawable = '1.1.0'
+versions.preference = '1.1.0'
+versions.banner = '1.4.10'
+versions.MagicIndicator = '1.5.0'
+versions.glide = '4.10.0'
+versions.fresco = '0.12.0'
+versions.recovery = '0.0.8'
+versions.utils = "1.11.1"
+versions.guava = '28.1-jre'
+versions.circleimageview = '3.0.1'
+versions.picasso = '2.71828'
+
+def deps = [:]
+
+def supports = [:]
+// com.android.support:multidex
+supports.multidex = "androidx.multidex:multidex:$versions.multidex"
+// com.android.support:appcompat-v7
+supports.appcompat = "androidx.appcompat:appcompat:$versions.appcompat"
+// com.android.support:design
+supports.design = "com.google.android.material:material:$versions.design"
+// com.android.support:support-v4
+supports.supportV4 = "androidx.legacy:legacy-support-v4:$versions.supportV4"
+// com.android.support:recyclerview-v7
+supports.recyclerview = "androidx.recyclerview:recyclerview:$versions.recyclerview"
+// com.android.support:percent
+supports.percentlayout = "androidx.percentlayout:percentlayout:$versions.percentlayout"
+// com.android.support:cardview-v7
+supports.cardview = "androidx.cardview:cardview:$versions.cardview"
+// com.android.support.constraint:constraint-layout
+supports.constraintlayout = "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
+// com.android.support:coordinatorlayout
+supports.coordinatorlayout = "androidx.coordinatorlayout:coordinatorlayout:$versions.coordinatorlayout"
+// com.android.support:viewpager
+supports.viewpager = "androidx.viewpager:viewpager:$versions.viewpager"
+// com.android.support:swiperefreshlayout
+supports.swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:$versions.swiperefreshlayout"
+// com.android.support:support-fragment
+supports.fragment = "androidx.fragment:fragment:$versions.fragment"
+// com.android.support:support-compat
+supports.core = "androidx.core:core:$versions.core"
+// com.android.support:support-annotations
+supports.annotation = "androidx.annotation:annotation:$versions.annotation"
+// com.android.support:media2
+supports.media2 = "androidx.media2:media2:$versions.media2"
+// com.android.support:gridlayout-v7
+supports.gridlayout = "androidx.gridlayout:gridlayout:$versions.gridlayout"
+// com.android.support:drawerlayout
+supports.drawerlayout = "androidx.drawerlayout:drawerlayout:$versions.drawerlayout"
+deps.supports = supports
+
+def jetpack = [:]
+// android.arch.lifecycle:extensions
+jetpack.lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleVersion"
+jetpack.lifecycleViewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycleVersion"
+jetpack.navigationFragment = "androidx.navigation:navigation-fragment:$versions.navigationVersion"
+jetpack.navigationUi = "androidx.navigation:navigation-ui:$versions.navigationVersion"
+jetpack.navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:$versions.navigationVersion"
+jetpack.navigationUiKtx = "androidx.navigation:navigation-ui-ktx:$versions.navigationVersion"
+deps.jetpack = jetpack
+
+def kotlin = [:]
+kotlin.kotlinStdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlinVersion"
+deps.kotlin = kotlin
+
+def tests = [:]
+tests.junit = "junit:junit:$versions.junit"
+tests.testRunner = "androidx.test:runner:$versions.testRunner"
+tests.testEspressoCore = "androidx.test.espresso:espresso-core:$versions.testEspressoCore"
+deps.tests = tests
+
+def views = [:]
+views.preference = "androidx.preference:preference:$versions.preference"
+views.vectordrawable = "androidx.vectordrawable:vectordrawable:$versions.vectordrawable"
+views.BaseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.BaseRecyclerViewAdapterHelper"
+views.banner = "com.youth.banner:banner:$versions.banner"
+views.MagicIndicator = "com.github.hackware1993:MagicIndicator:$versions.MagicIndicator"
+views.circleimageview = "de.hdodenhof:circleimageview:$versions.circleimageview"
+deps.views = views
+
+def others = [:]
+others.glide = "com.github.bumptech.glide:glide:$versions.glide"
+others.glideCompiler = "com.github.bumptech.glide:compiler:$versions.glide"
+others.fresco = "com.facebook.fresco:fresco:$versions.fresco"
+others.recovery = "com.zxy.android:recovery:$versions.recovery"
+others.utils = "com.blankj:utilcode:$versions.utils"
+others.guava = "com.google.guava:guava:$versions.guava"
+others.picasso = "com.squareup.picasso:picasso:$versions.picasso"
+deps.others = others
+
+ext.deps = deps

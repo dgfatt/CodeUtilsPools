@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_bottom"
+    app:startDestination="@+id/navigation_bottomhome"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_bottomhome"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.BottomHomeFragment"
+        android:label="@string/menu_bottomhome"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_bottomhome_second" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_stickyRecyclerviewFragment"
+            app:destination="@id/stickyRecyclerviewFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_floatingBarFragment"
+            app:destination="@id/floatinfBarFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_recyclerPinnedHeaderFragment"
+            app:destination="@id/recyclerPinnedHeaderFragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_recyclerPinnedHeader2Fragment"
+            app:destination="@id/recyclerPinnedHeader2Fragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_recyclerExpandFragment"
+            app:destination="@id/recyclerExpandFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bottomhome_second"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.BottomSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_BottomHomeSecondFragment_to_BottomHomeFragment"
+            app:destination="@id/navigation_bottomhome" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_notafication"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/stickyRecyclerviewFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.StickyRecyclerViewFragment"
+        android:label="@string/home_sticky"
+        tools:layout="@layout/fragment_sticky_recycler_view" />
+
+    <fragment
+        android:id="@+id/floatinfBarFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.FloatingBarFragment"
+        android:label="@string/home_float"
+        tools:layout="@layout/fragment_floatingbar" />
+
+    <fragment
+        android:id="@+id/recyclerPinnedHeaderFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.RecyclerPinnedHeaderFragment"
+        android:label="@string/home_RecyclerPinnedHeader"
+        tools:layout="@layout/fragment_recycler_pinned_header" />
+
+    <fragment
+        android:id="@+id/recyclerPinnedHeader2Fragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.RecyclerPinnedHeader2Fragment"
+        android:label="@string/home_RecyclerPinnedHeader2"
+        tools:layout="@layout/fragment_recycler_pinned_header2" />
+
+    <fragment
+        android:id="@+id/recyclerExpandFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.RecyclerExpandFragment"
+        android:label="@string/home_RecyclerExpand"
+        tools:layout="@layout/fragment_recycler_expand" />
+</navigation>

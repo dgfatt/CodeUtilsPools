@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/bottom_action_home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_find"
+        android:icon="@drawable/ic_find"
+        android:title="@string/bottom_action_find"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_null"
+        android:checkable="false"
+        android:checked="false"
+        android:enabled="false"
+        android:icon="@null"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_info"
+        android:title="@string/bottom_action_info"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_my"
+        android:title="@string/bottom_action_my"
+        app:showAsAction="always" />
+</menu>

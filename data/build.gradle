@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testApi deps.tests.junit
+    androidTestApi deps.tests.testRunner
+    androidTestApi deps.tests.testEspressoCore
+
+    api deps.kotlin.kotlinStdlibJdk7
+
+    api deps.supports.multidex
+    api deps.supports.appcompat
+    api deps.supports.design
+    api deps.supports.supportV4
+    api deps.supports.recyclerview
+    api deps.supports.cardview
+    api deps.supports.constraintlayout
+    api deps.supports.coordinatorlayout
+    api deps.supports.viewpager
+    api deps.supports.annotation
+
+    // android.arch.lifecycle:extensions
+    api deps.jetpack.lifecycleExtensions
+    api deps.jetpack.lifecycleViewmodelKtx
+    api deps.jetpack.navigationFragment
+    api deps.jetpack.navigationUi
+    api deps.jetpack.navigationFragmentKtx
+    api deps.jetpack.navigationUiKtx
+
+
+    api deps.views.preference
+    api deps.views.vectordrawable
+    api deps.views.BaseRecyclerViewAdapterHelper
+    api deps.views.banner
+    api deps.views.MagicIndicator
+    api deps.views.circleimageview
+
+    api deps.others.utils
+    api deps.others.glide
+    // annotationProcessor deps.others.glideCompiler
+    // 如果你在 Kotlin 编写的类里使用Glide注解，你需要引入一个kapt依赖，以代替常规的annotationProcessor依赖
+    kapt deps.others.glideCompiler
+    api deps.others.guava
+    api deps.others.picasso
+
+
+}

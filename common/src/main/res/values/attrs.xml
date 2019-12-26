@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GapBottomNavigationView">
+        <!--anchor_fab： 用来指定凹陷下去的 View ，一般都为 FloatingActionButton-->
+        <attr name="anchor_fab" format="reference" />
+        <!--shadow_length：用来指定高度（阴影大小）-->
+        <attr name="shadow_length" format="float" />
+        <!--cornerRadius：用来指定拐角处的平滑半径大小-->
+        <attr name="corner_radius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="StepProgressLayout">
+        <!--第一个条目的图片、大小-->
+        <attr name="step_first_image" format="reference" />
+        <attr name="step_first_image_size" format="dimension" />
+        <!--第一条Top线的高度-->
+        <attr name="step_first_line_height" format="dimension" />
+        <!--正常条目的图片、大小-->
+        <attr name="step_normal_image" format="reference" />
+        <attr name="step_normal_image_size" format="dimension" />
+        <!--正常条目Top线的高度-->
+        <attr name="step_normal_line_height" format="dimension" />
+        <!--线的大小、线的颜色-->
+        <attr name="step_line_size" format="dimension" />
+        <attr name="step_line_color" format="color|reference" />
+        <!--条目样式-->
+        <attr name="step_style" format="enum">
+            <enum name="first" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

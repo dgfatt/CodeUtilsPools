@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">工具池</string>
+
+    <string name="title_activity_bottom_action">BottomActionActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_bottomaction">BottomAction</string>
+    <string name="menu_bottomaction2">BottomAction2</string>
+    <string name="menu_bottomhome">BottomHome</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_notafication">Notafication</string>
+
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="home_second">Home Second</string>
+    <string name="home_sticky">Home Sticky</string>
+    <string name="home_float">Home Floating</string>
+    <string name="home_RecyclerPinnedHeader">Home RecyclerPinnedHeader</string>
+    <string name="home_RecyclerPinnedHeader2">Home RecyclerPinnedHeader2</string>
+    <string name="home_RecyclerExpand">Home RecyclerExpand</string>
+    <string name="hello_home_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_dashboard_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_notifications_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_gallery_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_slideshow_second">Hello HomeSecondFragment. Arg: %1$s</string>
+
+    <string name="bottom_action_home">首页</string>
+    <string name="bottom_action_find">发现</string>
+    <string name="bottom_action_info">消息</string>
+    <string name="bottom_action_my">我的</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="bottomsecond">BottomSecond</string>
+    <string name="floatingbar">FloatingBar</string>
+    <string name="stickyrecycler">StickyRecycler</string>
+    <string name="gridrecyclerpinned">GridRecyclerPinned</string>
+    <string name="linearrecyclerpinned">LinearRecyclerPinned</string>
+
+    <string name="waiting_reception">待受理</string>
+    <string name="distributed">已派发</string>
+    <string name="progressing">进行中</string>
+    <string name="auditing">审核中</string>
+    <string name="finished">已完成</string>
+    <string name="not_started">未开始</string>
+    <string name="recyclerexpand">RecyclerExpand</string>
+
+
+</resources>
