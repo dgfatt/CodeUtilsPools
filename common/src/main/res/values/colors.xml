@@ -14,6 +14,12 @@
     <color name="color_gray_f7">#f7f7f7</color>
     <color name="color_gray_cc">#cccccc</color>
 
+    <color name="bg1">#42CFBE</color>
+    <color name="bg2">#57B1CC</color>
+    <color name="bg3">#B888E5</color>
+    <color name="bg4">#F695A8</color>
+    <color name="bg5">#F9D461</color>
+
     <color name="color_transparent">@android:color/transparent</color>
     <color name="color_transparent_3f">#33ffffff</color>
 

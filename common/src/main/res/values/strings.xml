@@ -41,6 +41,12 @@
     <string name="home_RecyclerPinnedHeader">Home RecyclerPinnedHeader</string>
     <string name="home_RecyclerPinnedHeader2">Home RecyclerPinnedHeader2</string>
     <string name="home_RecyclerExpand">Home RecyclerExpand</string>
+    <string name="home_StickyFragment">Home Sticky</string>
+    <string name="home_StickyGridFragment">Home StickyGrid</string>
+    <string name="home_PowerfulStickyFragment">Home PowerfulSticky</string>
+    <string name="home_PowerfulStickyGridFragment">Home PowerfulStickyGrid</string>
+    <string name="home_BeautifulFragment">Home Beautiful</string>
+    <string name="home_ExpandableFragment">Home Expandable</string>
     <string name="hello_home_second">Hello HomeSecondFragment. Arg: %1$s</string>
     <string name="hello_dashboard_second">Hello HomeSecondFragment. Arg: %1$s</string>
     <string name="hello_notifications_second">Hello HomeSecondFragment. Arg: %1$s</string>

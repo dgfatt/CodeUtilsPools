@@ -1,5 +1,6 @@
 package com.ld.pool.codeutilspools.ui.bottomaction.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.NavHostFragment
 import com.ld.pool.codeutilspools.R
 import com.ld.pool.codeutilspools.ui.bottomaction.ui.home.viewModel.BottomHomeViewModel
+
 
 class BottomHomeFragment : Fragment() {
 
@@ -82,5 +84,64 @@ class BottomHomeFragment : Fragment() {
                 .navigate(action)
         }
 
+        view.findViewById<View>(R.id.button_home7).setOnClickListener {
+            val action = BottomHomeFragmentDirections
+                .actionNavigationBottomhomeToStickyFragment()
+            NavHostFragment.findNavController(this@BottomHomeFragment)
+                .navigate(action)
+        }
+
+        view.findViewById<View>(R.id.button_home8).setOnClickListener {
+            val action = BottomHomeFragmentDirections
+                .actionNavigationBottomhomeToStickyGridFragment()
+            NavHostFragment.findNavController(this@BottomHomeFragment)
+                .navigate(action)
+        }
+
+        view.findViewById<View>(R.id.button_home9).setOnClickListener {
+            val action = BottomHomeFragmentDirections
+                .actionNavigationBottomhomeToPowerfulStickyFragment()
+            NavHostFragment.findNavController(this@BottomHomeFragment)
+                .navigate(action)
+        }
+
+        view.findViewById<View>(R.id.button_home10).setOnClickListener {
+            val action = BottomHomeFragmentDirections
+                .actionNavigationBottomhomeToPowerfulStickyGridFragment()
+            NavHostFragment.findNavController(this@BottomHomeFragment)
+                .navigate(action)
+        }
+
+        view.findViewById<View>(R.id.button_home11).setOnClickListener {
+            val action = BottomHomeFragmentDirections
+                .actionNavigationBottomhomeToBeautifulFragment()
+            NavHostFragment.findNavController(this@BottomHomeFragment)
+                .navigate(action)
+        }
+
+        view.findViewById<View>(R.id.button_home12).setOnClickListener {
+            val action = BottomHomeFragmentDirections
+                .actionNavigationBottomhomeToExpandableFragment()
+            NavHostFragment.findNavController(this@BottomHomeFragment)
+                .navigate(action)
+        }
+
     }
+
+//    fun toPowerfulSticky(view: View?) {
+//        startActivity(Intent(this, PowerfulStickyActivity::class.java))
+//    }
+//
+//    fun toPowerfulStickyGrid(view: View?) {
+//        val intent = Intent(this, PowerfulStickyGridActivity::class.java)
+//        startActivity(intent)
+//    }
+//
+//    fun toPowerfulSticky2(view: View?) {
+//        startActivity(Intent(this, BeautifulActivity::class.java))
+//    }
+//
+//    fun toExpandableList(view: View?) {
+//        startActivity(Intent(this, ExpandableActivity::class.java))
+//    }
 }

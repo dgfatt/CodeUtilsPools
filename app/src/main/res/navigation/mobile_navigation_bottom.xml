@@ -36,6 +36,30 @@
             android:id="@+id/action_navigation_bottomhome_to_recyclerExpandFragment"
             app:destination="@id/recyclerExpandFragment" />
 
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_stickyFragment"
+            app:destination="@id/stickyFragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_stickyGridFragment"
+            app:destination="@id/stickyGridFragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_powerfulStickyGridFragment"
+            app:destination="@id/powerfulStickyGridFragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_powerfulStickyFragment"
+            app:destination="@id/powerfulStickyFragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_expandableFragment"
+            app:destination="@id/expandableFragment" />
+
+        <action
+            android:id="@+id/action_navigation_bottomhome_to_beautifulFragment"
+            app:destination="@id/beautifulFragment" />
+
     </fragment>
 
     <fragment
@@ -94,4 +118,41 @@
         android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.RecyclerExpandFragment"
         android:label="@string/home_RecyclerExpand"
         tools:layout="@layout/fragment_recycler_expand" />
+
+    <fragment
+        android:id="@+id/stickyFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.StickyFragment"
+        android:label="@string/home_StickyFragment"
+        tools:layout="@layout/fragment_sticky" />
+
+    <fragment
+        android:id="@+id/stickyGridFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.StickyGridFragment"
+        android:label="@string/home_StickyGridFragment"
+        tools:layout="@layout/fragment_sticky" />
+
+    <fragment
+        android:id="@+id/powerfulStickyFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.PowerfulStickyFragment"
+        android:label="@string/home_PowerfulStickyFragment"
+        tools:layout="@layout/fragment_sticky" />
+
+    <fragment
+        android:id="@+id/powerfulStickyGridFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.PowerfulStickyGridFragment"
+        android:label="@string/home_PowerfulStickyGridFragment"
+        tools:layout="@layout/fragment_sticky" />
+
+    <fragment
+        android:id="@+id/beautifulFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.BeautifulFragment"
+        android:label="@string/home_BeautifulFragment"
+        tools:layout="@layout/fragment_sticky" />
+
+    <fragment
+        android:id="@+id/expandableFragment"
+        android:name="com.ld.pool.codeutilspools.ui.bottomaction.ui.home.ExpandableFragment"
+        android:label="@string/home_ExpandableFragment"
+        tools:layout="@layout/fragment_sticky" />
+
 </navigation>

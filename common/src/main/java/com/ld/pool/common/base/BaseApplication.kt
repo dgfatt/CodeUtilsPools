@@ -5,7 +5,12 @@ import com.blankj.utilcode.util.Utils
 
 class BaseApplication : Application() {
 
-    init {
+    override fun onCreate() {
+        super.onCreate()
+        initUtils()
+    }
+
+    private fun initUtils() {
         Utils.init(this)
     }
 }
