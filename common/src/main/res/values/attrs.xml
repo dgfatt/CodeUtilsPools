@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <declare-styleable name="GapBottomNavigationView">
         <!--anchor_fab： 用来指定凹陷下去的 View ，一般都为 FloatingActionButton-->
         <attr name="anchor_fab" format="reference" />
@@ -37,7 +38,7 @@
         <!--控件颜色-->
         <attr name="hlv_color" format="color" />
         <!--转一圈花费时长-->
-        <attr name="hlv_duration" format="integer"/>
+        <attr name="hlv_duration" format="integer" />
     </declare-styleable>
 
     <declare-styleable name="RotateDotView">
@@ -59,4 +60,57 @@
             <enum name="scale" value="2" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="BackArrowView">
+        <!-- 箭头颜色 -->
+        <attr name="bav_color" format="color" />
+        <!-- 箭头线宽 -->
+        <attr name="bav_stroke_width" format="integer|float|dimension" />
+        <!-- 模式 -->
+        <attr name="bav_arrow_style" format="enum">
+            <!-- Google Material Design -->
+            <enum name="material_design" value="1" />
+            <!-- 微信风格 -->
+            <enum name="wechat_design" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StarsView">
+        <!-- 星星的颜色 -->
+        <attr name="stv_color" format="color" />
+        <!-- 星星的边数 -->
+        <attr name="stv_num" format="integer|dimension|reference" />
+        <!-- 边的线宽 -->
+        <attr name="stv_edge_line_width" format="float|dimension|reference" />
+        <!-- 填充风格 -->
+        <attr name="stv_style" format="enum">
+            <!-- 填满 -->
+            <enum name="fill" value="1" />
+            <!-- 描边 -->
+            <enum name="stroke" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="HookCheckBox">
+        <!-- 选中时圆的颜色 -->
+        <attr name="hcb_check_circle_color" format="color" />
+        <!-- 未选中时圆的颜色 -->
+        <attr name="hcb_uncheck_circle_color" format="color" />
+        <!-- 选中时的钩子的颜色 -->
+        <attr name="hcb_check_hook_color" format="color" />
+        <!-- 未选中时的钩子的颜色 -->
+        <attr name="hcb_uncheck_hook_color" format="color" />
+        <!-- 是否选中 -->
+        <attr name="hcb_is_check" format="boolean" />
+        <!-- 风格 -->
+        <attr name="hcb_style" format="enum">
+            <!-- 普通，对勾是有颜色的 -->
+            <enum name="normal" value="1" />
+            <!-- 镂空，就是对勾是透明的 -->
+            <enum name="hollow_out" value="2" />
+        </attr>
+        <!-- 线宽 -->
+        <attr name="hcb_line_width" format="float|dimension|reference" />
+    </declare-styleable>
+
 </resources>

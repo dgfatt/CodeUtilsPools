@@ -68,6 +68,108 @@
             app:layout_constraintTop_toBottomOf="@+id/rotate_dot_view"
             tools:ignore="MissingConstraints" />
 
+        <com.ld.pool.common.view.BackArrowView
+            android:id="@+id/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:bav_arrow_style="wechat_design"
+            app:bav_color="@android:color/black"
+            app:bav_stroke_width="1.5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStart"
+            tools:ignore="MissingConstraints" />
+
+        <com.ld.pool.common.view.BackArrowView
+            android:id="@+id/back_arrow2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:bav_arrow_style="material_design"
+            app:bav_color="@android:color/black"
+            app:bav_stroke_width="1.5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_arrow"
+            tools:ignore="MissingConstraints" />
+
+        <com.ld.pool.common.view.StarsView
+            android:id="@+id/stars"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_arrow2"
+            app:stv_color="#0000FF"
+            app:stv_edge_line_width="1dp"
+            app:stv_num="5"
+            app:stv_style="stroke"
+            tools:ignore="MissingConstraints" />
+
+        <com.ld.pool.common.view.StarsView
+            android:id="@+id/stars2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stars"
+            app:stv_color="#0000FF"
+            app:stv_edge_line_width="1dp"
+            app:stv_num="5"
+            app:stv_style="fill"
+            tools:ignore="MissingConstraints" />
+
+        <com.ld.pool.common.view.HookCheckBox
+            android:id="@+id/hook_checkbox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:hcb_is_check="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stars2" />
+
+        <com.ld.pool.common.view.HookCheckBox
+            android:id="@+id/hook_checkbox1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:hcb_is_check="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hook_checkbox" />
+
+        <com.ld.pool.common.view.HookCheckBox
+            android:id="@+id/hook_checkbox2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:hcb_check_circle_color="#6576D5"
+            app:hcb_is_check="false"
+            app:hcb_line_width="1dp"
+            app:hcb_style="hollow_out"
+            app:hcb_uncheck_circle_color="#818181"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hook_checkbox1" />
+
+        <com.ld.pool.common.view.HookCheckBox
+            android:id="@+id/hook_checkbox3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:hcb_check_circle_color="#6576D5"
+            app:hcb_is_check="true"
+            app:hcb_line_width="1dp"
+            app:hcb_style="hollow_out"
+            app:hcb_uncheck_circle_color="#818181"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hook_checkbox2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>

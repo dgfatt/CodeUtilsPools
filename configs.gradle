@@ -39,6 +39,7 @@ versions.picasso = '2.71828'
 versions.numberprogressbar = '1.4@aar'
 versions.updateApp = '3.5.2'
 versions.updateAppKtl = '1.2.3'
+versions.gradle = '3.5.3'
 
 def deps = [:]
 
@@ -117,6 +118,7 @@ others.fresco = "com.facebook.fresco:fresco:$versions.fresco"
 others.recovery = "com.zxy.android:recovery:$versions.recovery"
 others.utils = "com.blankj:utilcode:$versions.utils"
 others.guava = "com.google.guava:guava:$versions.guava"
+others.gradle = "com.android.tools.build:gradle:$versions.gradle"
 others.picasso = "com.squareup.picasso:picasso:$versions.picasso"
 others.updateApp = "com.qianwen:update-app:$versions.updateApp"
 deps.others = others
